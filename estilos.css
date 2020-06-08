@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap");
+/*Estilos del titulo de la interfaz*/
+.o-first-column {
+  font-family: Roboto;
+  margin-top: 0rem;
+  margin-right: 1rem;
+  padding: 4rem;
+  width: 700px;
+  height: 1000px;
+  font-size: 20px;
+  color: #9e9c9c;
+  font-weight: bold;
+}
+.o-form {
+  display: flex;
+  flex-direction: column;
+}
+.o-user {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.o-user input {
+  margin-left: 0rem;
+  margin-top: 0.5rem;
+  outline: none;
+
+}
+.o-pwd {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.o-pwd input {
+  margin-left: 0rem;
+  margin-top: 0.5rem;
+  outline: none;
+
+}
+/*Estilos del parrafo que se encuentra abajo del titulo*/
+.o-paragraph {
+  font-size: 20px;
+  color: black;
+}
+/*Se define el tamaño del contenedor del parrafo*/
+.o-text-container {
+  width: 100%;
+}
+/*Estilos de los Input Nombre de usuario y Contraseña*/
+.o-first-column input {
+  background: transparent;
+  border: none;
+  border-bottom: 1.5px solid gray;
+  width: 250px;
+  font-size: 20px;
+  margin-top: 0rem;
+}
+/*Tamaño del contenedor del boton*/
+.o-button {
+  margin-top: 2rem;
+  width: 200px;
+}
+/*Estilos del boton*/
+.o-button input {
+  border-radius: 10px;
+  width: 250px;
+  height: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: #8407b3;
+  border: none;
+  color: #ffffff;
+}
+/*Estilos de la primera palabra del titulo*/
+.o-tittle1 {
+  font-weight: bold;
+  font-size: 72px;
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+/*Estilos de la segunda palabra del titulo*/
+.o-tittle2 {
+  font-weight: bold;
+  font-size: 72px;
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+
+/*Definición del background del body*/
+body {
+  background-image: url(resources/burger.gif);
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+}
+/*Estilos del Link hacia la interfaz de registro*/
+.o-link {
+  color: black;
+  padding-left: 1rem;
+  padding-top: 1.2rem;
+}
+/*Media queries*/
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  .o-text-container {
+    width: 30%;
+  }
+  .o-tittle1 {
+    font-size: 38px;
+    width: 40%;
+  }
+  .o-tittle2 {
+    font-size: 38px;
+    width: 40%;
+  }
+
+  .o-first-column input {
+    width: 30%;
+    height: 30%;
+  }
+  .o-final-container {
+    width: 30%;
+  }
+  body {
+    width: 30%;
+  }
+  .o-button input {
+    margin-left: -0.5rem;
+    width: 250px;
+    height: 50px;
+  
+  }
+}
+/*Estilos del ultimo container de la interfaz*/
+.o-final-container {
+  display: flex;
+  flex-wrap: wrap;
+}

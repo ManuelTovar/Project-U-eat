@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="regist.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="o-principal-container">
+    <div class="o-big-container">
+      <div class="o-first-column">
+        <div>
+          <h1 class="o-tittle1">Regístrate en</h1>
+          <h1 class="o-tittle2">U-eats</h1>
+        </div>
+        <div class="o-text-container">
+          <p class="o-paragraph">Nos alegras que nos hayas escogido</p>
+        </div>
+
+        <div class="o-input">
+          <div class="o-input">
+            <form id="form_id" method="post" name="myform">
+              <div class="o-form">
+                <div class="o-name">
+                  <label>Nombre Usuario :</label>
+                  <input type="text" name="name" id="name" />
+                </div>
+                <div class="o-user">
+                  <label>Usuario :</label>
+                  <input type="text" name="username" id="username" />
+                </div>
+                <div class="o-mail">
+                  <label>Email :</label>
+                  <input type="text" name="email" id="email" />
+                </div>
+                <div class="o-pwd">
+                  <label>Contraseña :</label>
+                  <input type="password" name="password" id="password" />
+                </div>
+                <div class="o-pwd2">
+                  <label>Confirmar contraseña :</label>
+                  <input type="password" name="password2" id="password2" />
+                </div>
+              </div>
+
+              <div class="o-button">
+                <input type="button" value="Registro" id="submit" onclick="validate()" />
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="o-final-container">
+          <p>¿Ya tienes una cuenta?</p>
+          <a class="o-link" href="index.html"><u>Inicia sesión</u></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

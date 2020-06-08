@@ -1,0 +1,348 @@
+/*-----------Styles home preconfigured-----------*/
+body{
+    padding: 0;
+    margin: 1rem 0rem 0rem 0rem;
+    display: flex;
+    font-family: 'Roboto';
+
+   
+}
+
+/*----------Start of header bar styles------------*/
+.o-container-header-bar{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 1px 5px 8px rgba(109, 109, 109, 0.507);
+    background-color: white;
+
+}
+
+.o-nav-bar-first{
+    display: flex;
+}
+
+.o-nav-bar-second{
+    display: flex;
+}
+
+.o-nav-bar-first a, .o-nav-bar-second a{
+    text-decoration: none;
+    padding: 1rem 3rem 1rem 3rem;
+    color: black;
+    font-weight: bold;
+}
+
+
+.o-nav-bar-first a:hover, .o-nav-bar-second a:hover{
+    background-color: #FEB618;
+    color: white;
+}
+
+.o-active{
+    background-color: #FEB618;
+    background-image: url(resources/restaurant.png);
+    background-repeat: no-repeat;
+    background-position: 10% 50%; 
+}
+
+
+.o-search{
+    display: flex;
+    align-items: center;
+    margin-right: 0.5rem;
+  
+}
+
+.o-search button{
+    background-color: #FEB618;
+    width: 2rem;
+    height: 2rem;
+    cursor:pointer;
+    border-radius: 10px;
+    border: none;
+    margin: 0rem 0rem 0rem 0.5rem;
+
+}
+
+.o-search input{
+    border-radius: 10px;
+    border: none;
+    height: 2rem;
+    width: auto; 
+    background-color: white;
+    border: 2px solid #FEB618;
+    border-radius: 10px;
+    
+}
+.o-search input::placeholder{
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+.o-search img{
+    width: 1rem;
+    height: 1rem;
+}
+
+
+/*--------End of header bar styles-------*/
+
+/*--------Start of firts column styles--------*/
+.o-firts-column-container{
+    margin: 1rem 1rem 0rem 2rem;
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.o-title-container{
+    margin: 1rem;
+}
+
+.o-title-container h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+.o-message-container{
+    margin: 1rem 1rem 1rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+
+}
+
+.o-message-container p{
+margin: 0;
+
+}
+
+.o-button-container{
+    margin: 1rem;
+}
+
+.o-button-container button{
+    width: auto;
+    height: 3rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #FEB618;
+    box-shadow: 1px 5px 8px rgba(109, 109, 109, 0.507);
+    cursor: pointer;
+}
+
+.o-img-panoramic{
+    display: flex;
+    justify-content: center;
+
+}
+
+.o-img-panoramic img{
+    max-height: 10rem;
+    width: 100%;
+    margin: 1rem 1rem 1rem 1rem;
+
+}
+
+.o-offer-container{
+    margin: 1rem;
+    padding: 0;    
+}
+
+.o-subtitles{
+    margin-top: 0rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+.o-subtitles h3{
+    cursor: pointer;
+}
+
+.o-subtitles h4{
+    margin: 0;
+}
+
+.o-meals-offer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem 1rem 1rem 1rem;
+
+}
+
+.o-img-container{
+    text-align: center;
+    
+}
+
+.o-img-container p{
+    margin: 0;
+    font-weight: 700;
+    color: #FEB618;
+}
+
+.o-img-container h4{
+    margin: 0.5rem 0rem 0rem 0rem;
+}
+
+.o-img-offer{
+    margin: 1rem 0rem 0rem 0rem;
+    width: auto;
+    height: 150px;
+    border-radius: 70px ;
+}
+/*--------End of firts column styles--------*/
+
+/*--------Start of second column styles--------*/
+.o-second-column-container{
+
+    margin: 1rem 0rem 0rem 0rem;
+    width: 45vw;
+    background-color: #FEB618;
+    background-image: url(resources/Home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:-36rem -1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    overflow: hidden;
+    box-shadow: 1px 5px 8px rgba(109, 109, 109, 0.507);
+}
+
+.o-arrow-buttons-container{
+    border-radius: 10px;
+    display: flex;
+
+}
+
+.o-button-left, .o-button-right{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 100px;
+    margin: 0rem 0.5rem 0.5rem 0rem;
+    background-color: #FEB618;
+    cursor:pointer;
+    
+}
+.o-button-left:hover, .o-button-right:hover{
+    box-shadow: 1px 5px 8px rgba(109, 109, 109, 0.507);
+    
+}
+
+.o-card-container{
+    display: flex;
+    transform: translate(40rem);
+}
+
+.o-card{
+    background-color: white;
+    border-radius: 10px;
+    width: 20rem;
+    height: 15rem;
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 0.5rem;
+    box-shadow: 1px 5px 8px rgba(109, 109, 109, 0.507);
+    transition:  .3s;
+
+
+}
+
+.o-card:hover{
+    transform: scale(1.04);
+    transition:  .3s;
+}
+
+.o-card-title {
+    display: flex;
+    margin-top: 0.5rem;
+
+}
+
+.o-info-restaurant{
+    margin-right: 1rem;
+}
+
+.o-info-restaurant h4{
+    padding: 0;
+    margin: 0;
+}
+
+.o-info-restaurant p{
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+}
+
+.o-icon-location{
+    height: 1.5rem;
+    width: 1.5rem;
+    align-self: center;
+
+}
+
+.o-icon-star{
+    margin-left: 1px;
+    height: 1rem;
+    width: 1rem;
+    align-self: center;
+    float: right;
+}
+
+.o-card-content p{
+    font-weight: 400;
+    text-align: justify;
+    margin: 0rem 2rem 1rem 2rem;
+
+}
+
+.o-card-content h2{
+    margin-left: 1rem;
+}
+
+.o-card-price{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+
+
+}
+
+.o-card-price h3{
+    margin: 0rem 0rem 0rem 1rem;
+    font-size: 1.5rem;
+
+}
+
+.o-card-price a{
+    text-decoration: none;
+
+}
+
+.o-card-price p{
+    margin: 0rem 1rem 0rem 0rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FEB618;
+
+}
+/*--------End of second column styles--------*/
+ 

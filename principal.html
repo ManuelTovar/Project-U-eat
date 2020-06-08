@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>U-eat</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='Home.css'>
+    <!-- Javascript function to move restaurant cards -->
+    <script src='main.js'></script>
+</head>
+
+<body>
+
+    <!-- Start of the header bar div -->
+    <div class="o-container-header-bar">
+
+        <div class="o-nav-bar-first">
+            <a class="o-active" href="index.html"> U-eat</a>
+            <a href="restaurantes.html">Oferta del día</a>
+            <a href="#" onclick="Message()">Parche U-eat</a>
+            <a href="#" onclick="Message()">Reserva tu mesa</a>
+        </div>
+
+        <div class="o-nav-bar-second">
+
+            <div class="o-search">
+                <input type="text" id="search-box" placeholder="¿Qué quieres comer?">
+                <button onclick="location.href='restaurantes.html'"><img src="resources/search.png" alt="Icono buscar"></button>
+            </div>
+
+            <a href="regist.html"><i class=" fa fa-book"></i> Regístrate</a>
+            <a href="index.html"><i class="fa fa-fw fa-user"></i> Iniciar Sesión</a>
+        </div>
+
+
+    </div>
+    <!-- End of the header bar div -->
+
+    <!-- Start of the firts home div container -->
+    <div class="o-firts-column-container">
+
+        <div class="o-title-container">
+
+            <h1>¿Cansado de esperar o
+                <br>hacer fila por tu
+                <br>comida?</h1>
+
+        </div>
+
+        <div class="o-message-container">
+
+            <p>Con u-eat podras obtener la comida en la universidad a un precio justo
+                y lo mejor de todo sin esperar, nuestro lema es come lo que quieres
+                y ahorra tiempo para algo genial!</p>
+
+        </div>
+
+        <div class="o-img-panoramic">
+
+            <img src="resources/fondo.jpg" alt="Imagen comida rapida vectores">
+
+        </div>
+
+        <div class="o-button-container">
+
+            <button onclick="location.href='restaurantes.html'">Encuentra tu restaurante</button>
+
+        </div>
+
+        <div class="o-offer-container">
+
+            <div class="o-subtitles">
+                <h3>En caliente</h3>
+                <h3>Más...</h3>
+            </div>
+
+            <div class="o-meals-offer-container">
+
+                <div class="o-img-container">
+                    <img class="o-img-offer" src="resources/Salmongrillado.png" alt="Imagen Salmon Grillado">
+                    <h4>Salmon Grillado</h4>
+                    <p>10.000 COP</p>
+                </div>
+
+                <div class="o-img-container">
+                    <img class="o-img-offer" src="resources/Sushisake.png" alt="Imagen Sushi Sake">
+                    <h4>Sushi sake</h4>
+                    <p>11.000 COP</p>
+                </div>
+
+                <div class="o-img-container">
+                    <img class="o-img-offer" src="resources/Bombonesdearroz.png" alt="Imagen Bombones de arroz">
+                    <h4>Bombones de arroz</h4>
+                    <p>12.000 COP</p>
+                </div>
+
+                <div class="o-img-container">
+                    <img class="o-img-offer" src="resources/Filetmignon.png" alt="Imagen Filet Mignon">
+                    <h4>Filet mignon</h4>
+                    <p>13.000 COP</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- End of the firts home div container -->
+
+    <!-- Start of the second home div container -->
+    <div class="o-second-column-container">
+
+        <div class="o-arrow-buttons-container">
+
+            <!-- Buttons of event for the function of move cards restaurant -->
+            <button class="o-button-left" onclick="MoveLeft()"><img src="resources/back.png"
+                    alt="Icono flecha izquierda"></button>
+            <button class="o-button-right" onclick="MoveRight()"><img src="resources/next.png"
+                    alt="Icono flecha derecha"></button>
+
+        </div>
+
+        <div id="card-container" class="o-card-container">
+
+            <div class="o-card">
+
+                <div class="o-card-title">
+
+                    <img class="o-icon-location" src="resources/Ubication.png" alt="Icono ubicacion">
+
+                    <div class="o-info-restaurant">
+                        <h4>Restaurante D'Cafe</h4>
+                        <p>2do Piso cafetería central</p>
+                    </div>
+
+                    <img class="o-icon-star" src="resources/star.png" alt="Icono estrella">
+                    <img class="o-icon-star" src="resources/star.png" alt="Icono estrella">
+                    <img class="o-icon-star" src="resources/star.png" alt="Icono estrella">
+                    <img class="o-icon-star" src="resources/star.png" alt="Icono estrella">
+                    <img class="o-icon-star" src="resources/star.png" alt="Icono estrella">
+
+                </div>
+
+                <div class="o-card-content">
+                    <h2>Almuerzo Vegano</h2>
+                    <p>Un delicioso almuerzo vegano el cual contiene zetas pomodoro con un chiffonade de albahaca,
+                        brócoli, aguacate y pimentón</p>
+                </div>
+
+                <div class="o-card-price">
+                    <h3>10.000 COP</h3>
+                    <a href="restaurantes.html">
+                        <p>Pedir</p>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="o-card">
+
+                <div class="o-card-title">
+
+                    <img class="o-icon-location" src="resources/Ubication.png" alt="Icono ubicacion">
+
+                    <div class="o-info-restaurant">
+                        <h4>Restaurante D'Cafe</h4>
+                        <p>2do Piso cafetería central</p>
+                    </div>
+
+                    <img class="o-icon-star" src="resources/star.png" alt="Icono estrella">
+                    <img class="o-icon-star" src="resources/star.png" alt="Icono estrella">
+                    <img class="o-icon-star" src="resources/star.png" alt="Icono estrella">
+                    <img class="o-icon-star" src="resources/star.png" alt="Icono estrella">
+                    <img class="o-icon-star" src="resources/star.png" alt="Icono estrella">
+
+                </div>
+
+                <div class="o-card-content">
+                    <h2>Almuerzo Vegano</h2>
+                    <p>Un delicioso almuerzo vegano el cual contiene zetas pomodoro con un chiffonade de albahaca,
+                        brócoli, aguacate y pimentón</p>
+                </div>
+
+                <div class="o-card-price">
+                    <h3>10.000 COP</h3>
+                    <a href="restaurantes.html">
+                        <p>Pedir</p>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="o-card">
+
+                <div class="o-card-title">
+
+                    <img class="o-icon-location" src="resources/Ubication.png" alt="Icono ubicacion">
+
+                    <div class="o-info-restaurant">
+                        <h4>Restaurante D'Cafe</h4>
+                        <p>2do Piso cafetería central</p>
+                    </div>
+
+                    <img class="o-icon-star" src="resources/star.png" alt="Icono estrella">
+                    <img class="o-icon-star" src="resources/star.png" alt="Icono estrella">
+                    <img class="o-icon-star" src="resources/star.png" alt="Icono estrella">
+                    <img class="o-icon-star" src="resources/star.png" alt="Icono estrella">
+                    <img class="o-icon-star" src="resources/star.png" alt="Icono estrella">
+
+                </div>
+
+                <div class="o-card-content">
+                    <h2>Almuerzo Vegano</h2>
+                    <p>Un delicioso almuerzo vegano el cual contiene zetas pomodoro con un chiffonade de albahaca,
+                        brócoli, aguacate y pimentón</p>
+                </div>
+
+                <div class="o-card-price">
+                    <h3>10.000 COP</h3>
+                    <a href="restaurantes.html">
+                        <p>Pedir</p>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="o-card">
+
+                <div class="o-card-title">
+
+                    <img class="o-icon-location" src="resources/Ubication.png" alt="Icono ubicacion">
+
+                    <div class="o-info-restaurant">
+                        <h4>Restaurante D'Cafe</h4>
+                        <p>2do Piso cafetería central</p>
+                    </div>
+
+                    <img class="o-icon-star" src="resources/star.png" alt="Icono estrella">
+                    <img class="o-icon-star" src="resources/star.png" alt="Icono estrella">
+                    <img class="o-icon-star" src="resources/star.png" alt="Icono estrella">
+                    <img class="o-icon-star" src="resources/star.png" alt="Icono estrella">
+                    <img class="o-icon-star" src="resources/star.png" alt="Icono estrella">
+
+                </div>
+
+                <div class="o-card-content">
+                    <h2>Almuerzo Vegano</h2>
+                    <p>Un delicioso almuerzo vegano el cual contiene zetas pomodoro con un chiffonade de albahaca,
+                        brócoli, aguacate y pimentón</p>
+                </div>
+
+                <div class="o-card-price">
+                    <h3>10.000 COP</h3>
+                    <a href="restaurantes.html">
+                        <p>Pedir</p>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- End of the second home div container -->
+
+
+</body>
+
+</html>

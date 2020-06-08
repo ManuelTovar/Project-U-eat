@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="estilos.css" />
+  <script src="login.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="o-principal-container">
+    <div class="o-big-container">
+      <div class="o-first-column">
+        <div>
+          <h1 class="o-tittle1">Hola, bienvenido a</h1>
+          <h1 class="o-tittle2">U-eats</h1>
+        </div>
+        <div class="o-text-container">
+          <p class="o-paragraph">¿Qué comeras hoy?, ¡vamos a averiguarlo!</p>
+        </div>
+
+        <div class="o-input">
+          <form id="form_id" method="post" name="myform">
+            <div class="o-form">
+              <div class="o-user">
+                <label>Usuario :</label>
+                <input type="text" name="username" id="username" />
+              </div>
+              <div class="o-pwd">
+                <label>Contraseña :</label>
+                <input type="password" name="password" id="password" />
+              </div>
+
+            </div>
+
+
+            <div class="o-button">
+              <input type="button" value="Login" id="submit" onclick="validate()" />
+            </div>
+          </form>
+        </div>
+
+        <div class="o-final-container">
+          <p>¿No tienes cuenta aún?</p>
+          <a class="o-link" href="regist.html"><u>Registrate</u></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
